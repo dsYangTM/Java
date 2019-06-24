@@ -1,7 +1,7 @@
 ## 常用命令
 
 |命令|含义|选项|
-|:|:|-|
+|-|-|-|
 |ls|显示文件和目录列表(list)|-a	(all) 隐藏文件、特殊目录.和..<br />-l	(long)<br />-t	(time)|
 |pwd|显示当前工作目录（print working directory）||
 |touch或者>|创建空文件||
