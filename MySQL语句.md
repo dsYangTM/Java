@@ -3,7 +3,7 @@
 |要求|语句|
 | ---------- | ---------------------------------------------------- |
 | 连接数据库 | mysql -h 地址 -P 端口 -u 用户名 -p密码 [数据库名] |
-| 修改用户密码 | set password=password("youpassword");<br />alter user 'root'@'localhost' identified by 'youpassword'; |
+| 修改用户密码 | set password=password("youpassword");或<br />alter user 'root'@'localhost' identified by 'youpassword'; |
 | 刷新权限 | flush privileges; |
 
 #### show语句
@@ -28,7 +28,7 @@
 | 查看表的分片信息                                   | explain select * from 表名；                                 |
 | 拼接字符串（根据具体需求对concat里的参数进行修改） | select concat(‘user:’,'name',字段,':',user_id)from 表名；    |
 | 根据条件判断数量                                   | select userId，count(1) from 表名 where 条件 group by userId； |
-| 查询出的数据不为空                                 | 条件后添加 `trim(字段)<>''` 或 `trim(字段)!=''` 或 `字段 is not null`； |
+| 查询出的数据不为空                                 | 条件后添加 <br />`trim(字段)<>''` 或<br />`trim(字段)!=''` 或<br />`字段 is not null`； |
 | 不包含0-9的数字                                    | 条件后添加  not like ‘%[ ^0-9 ]%’                            |
 | 从指定的位置查数据                                 | 最后加 limit 20，10；（从第20条开始查，查询10条数据）        |
 | 查找15位身份证                                     | 条件后加 length(表示身份证的字段) = 15；                     |
